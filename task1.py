@@ -6,3 +6,23 @@
 # список: ["йцу", "фыв", "ячс", "цук", "йцукен"], ищем: "йцу", ответ: -1
 # список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 # список: [], ищем: "123", ответ: -1
+
+spisok = ["йцу", "фыв", "ячс", "цук", "йцукен"]
+a = "йцу"
+second = None
+for i in range(len(spisok)):
+    if spisok[i] == a in spisok:
+        for j in range(i+1, len(spisok)):
+            if spisok[j] == a in spisok:
+                second = j
+                print("Позиция второго вхождения", second)
+                break
+if second is None:
+    print(-1)
+
+
+
+
+
+
+
